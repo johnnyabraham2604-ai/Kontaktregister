@@ -28,10 +28,8 @@ Reihenfolge einhalten, sie vermeidet die typischen Fehler. Dauer etwa 45 Minuten
 ### 1. Code in ein privates GitHub-Repository
 
 1. Auf github.com ein neues **privates** Repository anlegen, Name zum Beispiel `register`, ohne README.
-2. Im entpackten Projektordner:
+2. Der entpackte Ordner ist bereits ein Git-Repository mit einem ersten Commit. Im Projektordner:
    ```bash
-   git add -A && git commit -m "Register Version 1"
-   git branch -M main
    git remote add origin https://github.com/<dein-name>/register.git
    git push -u origin main
    ```
