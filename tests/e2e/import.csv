@@ -1,0 +1,10 @@
+Vorname;Nachname;E-Mail;Firma;Position;Stadt;Land;Kennengelernt am;Ort / Veranstaltung;Land des Kennenlernens;Kategorien;Tags;Interessen;Notizen
+Wei;Zhang;wei.zhang@example.cn;NIO;Battery Engineer;Shanghai;China;12.09.2025;Tongji Alumni-Abend;China;Reisen, Universität und Forschung;Automotive;Technologie;Arbeitet an Zellalterung, will 2027 nach Deutschland
+Lin;李;;CATL;Researcher;Ningde;China;2025-09-14;Battery Show Shanghai;China;Arbeit und Karriere;Automotive, China;Technologie, Robotik;
+Selam;Tesfay;selam@example.org;;Ärztin;Asmara;Eritrea;03.07.2024;Hochzeit in Frankfurt;Deutschland;Freunde;Afrika;Fußball;Spricht Tigrinya und Italienisch
+ሳባ;ገብረ;;;Lehrerin;Mekelle;Äthiopien;;HOAM Schulbesuch;Äthiopien;Länder und internationale Kontakte;Afrika;Sport;
+Anna;Schmidt;anna.schmidt@example.de;Lakestar;Investment Manager;Berlin;Deutschland;2026-03-02;Founders Dinner;Deutschland;Start-ups und Venture Capital;;Technologie, Unternehmertum;Interessiert an Mobility
+Max;Müller;max.mueller@example.de;Mercedes-Benz;Entwickler;Sindelfingen;Deutschland;2026-10-01;Team-Event;Deutschland;Arbeit und Karriere;Automotive;Laufen;
+Max;Müller;;Bosch;Doppelt?;Stuttgart;Deutschland;;;;;;;
+Jonas;Weber;;TUM;Doktorand;München;Deutschland;2026-07-15;FZG Kolloquium;Deutschland;Universität und Forschung;;Technologie;
+Ohne;;;;;;;;;;;;;
