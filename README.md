@@ -2,7 +2,7 @@
 
 Persönliches Gedächtnis für die Menschen, die du kennenlernst. Profile, Gesprächshistorie, Kategorien, Tags und Interessen, kombinierbare Suche und Erinnerungen per E-Mail, die zuverlässig im Hintergrund verschickt werden, auch wenn kein Browser offen ist.
 
-**Stack:** Next.js 16 (TypeScript) auf Vercel, Supabase in Frankfurt (Postgres, Auth, Row Level Security, privater Bildspeicher, pg_cron), Resend für E-Mails.
+**Stack:** Next.js 16 (TypeScript) auf Vercel, Supabase in der EU (Postgres, Auth, Row Level Security, privater Bildspeicher, pg_cron), Resend für E-Mails.
 
 ## Stand
 
@@ -37,7 +37,7 @@ Reihenfolge einhalten, sie vermeidet die typischen Fehler. Dauer etwa 45 Minuten
 
 ### 2. Supabase-Projekt
 
-1. supabase.com, **New project**. Region **Central EU (Frankfurt)**. Ein langes Datenbankpasswort aus dem Passwortmanager.
+1. supabase.com, **New project**. Eine EU-Region, z. B. Central EU (Frankfurt) oder North EU (Stockholm). Die Vercel-Region in `vercel.json` sollte dazu passen. Ein langes Datenbankpasswort aus dem Passwortmanager.
 2. **SQL Editor**, neue Abfrage: Inhalt von `supabase/migrations/20261025000001_schema.sql` einfügen, **Run**. Dann genauso `supabase/migrations/20261025000002_storage.sql`.
 3. **Authentication, Sign In / Providers, Email**: aktiv lassen. **Allow new users to sign up** ausschalten.
 4. **Authentication, Users, Add user, Create new user**: deine E-Mail-Adresse und ein starkes Passwort (mindestens 12 Zeichen), **Auto Confirm User** an.
@@ -68,7 +68,7 @@ Reihenfolge einhalten, sie vermeidet die typischen Fehler. Dauer etwa 45 Minuten
    | `APP_URL` | zunächst leer lassen |
 
 3. **Deploy**. Danach die Produktionsadresse kopieren (z. B. `https://register-abc.vercel.app`), als `APP_URL` eintragen und unter **Deployments** neu deployen.
-4. `vercel.json` legt die Funktionen nach Frankfurt (`fra1`) und richtet einen täglichen Kontrolllauf ein (05:00 UTC).
+4. `vercel.json` legt die Funktionen nach Stockholm (`arn1`), nahe an der Datenbank (`eu-north-1`), und richtet einen täglichen Kontrolllauf ein (05:00 UTC).
 
 ### 5. Supabase mit der App verbinden
 

@@ -30,8 +30,8 @@ export default function PrivacyPage() {
         <section>
           <h2 className="mb-2 font-semibold">Wo die Daten liegen</h2>
           <ul className="list-disc space-y-1.5 pl-5">
-            <li>Datenbank, Anmeldung und Profilbilder: Supabase, Region Frankfurt (EU). Zugriff ist per Row Level Security auf den Kontoinhaber beschränkt.</li>
-            <li>Webanwendung: Vercel, Serverfunktionen in Frankfurt. Daten werden dort verarbeitet, aber nicht dauerhaft gespeichert.</li>
+            <li>Datenbank, Anmeldung und Profilbilder: Supabase, Region Stockholm (EU). Zugriff ist per Row Level Security auf den Kontoinhaber beschränkt.</li>
+            <li>Webanwendung: Vercel, Serverfunktionen in Stockholm (EU). Daten werden dort verarbeitet, aber nicht dauerhaft gespeichert.</li>
             <li>
               E-Mail-Erinnerungen: Resend. Der Inhalt einer Erinnerung (Name, Anlass, je nach Einstellung Notizauszug) passiert dabei
               die Infrastruktur von Resend. Resend speichert E-Mail-Metadaten und Protokolle in den USA. Mit der Einstellung

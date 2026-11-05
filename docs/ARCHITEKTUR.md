@@ -5,8 +5,8 @@
 | Baustein | Wahl | Warum |
 |:--|:--|:--|
 | Oberfläche und Server | Next.js 16, TypeScript, Server Components und Server Actions | Ein Projekt für Seiten, Formulare, API und Scheduler-Endpunkt. Keine eigene Backend-API nötig. |
-| Datenbank, Login | Supabase, Region Frankfurt | Verwaltetes Postgres mit Row Level Security, Auth, Speicher und pg_cron in einem Dienst. Exportierbar, da Standard-Postgres. |
-| Hosting | Vercel Hobby, Funktionen in `fra1` | Automatisches Deployment aus GitHub, kein Server zu pflegen. |
+| Datenbank, Login | Supabase, Region Stockholm (eu-north-1) | Verwaltetes Postgres mit Row Level Security, Auth, Speicher und pg_cron in einem Dienst. Exportierbar, da Standard-Postgres. |
+| Hosting | Vercel Hobby, Funktionen in `arn1` (Stockholm) | Automatisches Deployment aus GitHub, kein Server zu pflegen. |
 | E-Mail | Resend | Einfache API, Idempotency-Keys, kostenloser Tarif reicht für eine Person. |
 | Scheduler | `pg_cron` + `pg_net` in Supabase, alle 10 Minuten, plus täglicher Vercel-Cron als Kontrolllauf | Vercel-Cron allein läuft im Gratistarif nur einmal täglich. pg_cron läuft in der Datenbank und überlebt Neustarts und Deployments. |
 
@@ -15,7 +15,7 @@ Verworfen: reine Browser-Speicherung (keine Hintergrund-Erinnerungen, kein Mehrg
 ## Datenfluss einer Erinnerung
 
 ```
-pg_cron (alle 10 min) ──POST + Secret──▶ /api/cron/dispatch (Vercel, fra1)
+pg_cron (alle 10 min) ──POST + Secret──▶ /api/cron/dispatch (Vercel, arn1)
 Vercel-Cron (täglich) ──GET + Secret───▶        │
                                                 ▼
                          1. Einplanen: fällige Einzel-Erinnerungen und Sammel-E-Mail
