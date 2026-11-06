@@ -54,5 +54,6 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|icon.svg|api/cron|robots.txt).*)"],
+  // Symbole und Manifest ohne Anmeldung, das Handy lädt sie ohne Sitzung
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|apple-icon|icons/|manifest.webmanifest|api/cron|robots.txt).*)"],
 };

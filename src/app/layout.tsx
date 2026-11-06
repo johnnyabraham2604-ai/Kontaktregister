@@ -5,7 +5,9 @@ export const metadata: Metadata = {
   title: { default: "Register", template: "%s · Register" },
   description: "Persönliches Gedächtnis für die Menschen, die ich kenne.",
   robots: { index: false, follow: false },
-  icons: { icon: "/icon.svg" },
+  applicationName: "Register",
+  appleWebApp: { capable: true, title: "Register", statusBarStyle: "default" },
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
